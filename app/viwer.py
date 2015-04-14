@@ -15,7 +15,6 @@ class Window(QMainWindow,Ui_MainWindow):
         Ui_MainWindow.__init__(self)
         self.setupUi(self)
         self.setWindowTitle("Markdown reader")
-
         self.actionOpen.triggered.connect(self.getFile)
 
     def getFile(self):
